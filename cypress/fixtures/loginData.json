@@ -1,0 +1,11 @@
+{
+  "validUser": {
+    "email": "testes+desafioqa@credifit.com.br",
+    "password": "abcd1234"
+  },
+  "invalidUser": {
+    "email": "testes+desafioqa@credifit.com.br",
+    "password": "1234wxyz"
+  },
+  "invalidEmail": "testes+desafioqacredifit.com.br"
+}
