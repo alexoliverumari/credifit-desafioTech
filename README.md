@@ -41,7 +41,7 @@ Este é um projeto de automação de testes utilizando [Cypress](https://www.cyp
   - `integration/`: Onde os testes estão localizados.
   - `plugins/`: Arquivos de configuração e plugins para Cypress.
   - `support/`: Comandos e suporte configurados para o Cypress.
-- `cypress.json`: Arquivo de configuração do Cypress.
+- `cypress.config.js`: Arquivo de configuração do Cypress.
 - `package.json`: Dependências e scripts do projeto.
 
 ## Pré-requisitos

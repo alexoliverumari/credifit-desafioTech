@@ -19,6 +19,7 @@ describe('Credifit Admin Portal - End to End', () => {
     cy.get('.ant-avatar')
       .click()
 
+    // Valida as informações do Usuário (email e username)
     cy.contains('div', 'Usuario Desafio').should('be.visible')
     cy.contains('div', email).should('have.text', email)
 
@@ -30,10 +31,12 @@ describe('Credifit Admin Portal - End to End', () => {
   // Caso de Teste 01 - Página Inicial - valida campos de filtros
   it('CT01 - valida campos de filtros', () => {
 
+    // Valida o input do CPF e aplicação da máscara de formatação
     cy.get('[data-cy="cpf-item-data-cy"]')
       .type('12345678909')
       .should('have.value', '123.456.789-09')
-
+    
+    // Valida o input no campo de Empresa 
     cy.get('[data-cy="companyName-item-data-cy"]')
       .type('Empresa XYZ')
 
@@ -108,7 +111,8 @@ describe('Credifit Admin Portal - End to End', () => {
 
   })
 
-  it('logout', () => {
+  // Caso de Teste 05 - Página Inicial - logout
+  it('CT05 - logout', () => {
     
     cy.logout()
 
